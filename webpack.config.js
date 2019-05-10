@@ -45,12 +45,22 @@ module.exports = {
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        exclude: /node_modules/,
-        loader: 'file-loader?limit=1024&name=fonts/[name].[ext]'
+        loader: "file-loader",
+        options: {
+          name:'[name].[ext]',
+          limit: 1042,
+          outputPath:'fonts/',
+          publicPath: 'dist/fonts/'
+        }
       },
       { test: /\.(ttf|eot|otf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        exclude: /node_modules/,
-        loader: "file-loader?limit=1024&name=fonts/[name].[ext]"
+        loader: "file-loader",
+        options: {
+          name:'[name].[ext]',
+          limit: 1042,
+          outputPath:'fonts/',
+          publicPath: 'dist/fonts/'
+        }
       }
     ]
   }
