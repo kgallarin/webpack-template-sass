@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "webpack-sass",
   "homepage": "https://github.com/kgallarin/kgallarin.github.io",
-  "author": "Optimail",
+  "author": "Kevin M. Gallarin",
   "license": "ISC",
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
